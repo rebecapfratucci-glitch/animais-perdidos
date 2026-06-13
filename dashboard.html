@@ -237,8 +237,9 @@ canvas{
                         <th>Tipo</th>
                         <th>Status</th>
                         <th>Descrição</th>
+                        <th>Endereço</th>
                         <th>Contato</th>
-                        <th>Ações</th>
+                        <th style="width: 150px;">Ações</th>
                     </tr>
                 </thead>
 
@@ -436,9 +437,9 @@ function renderTabela(){
             texto.includes(busca);
 
         const matchStatus =
-            !filtro ||
-            a.status===filtro;
-
+                !filtro ||
+                a.status===filtro ;
+                     
         return matchBusca && matchStatus;
 
     })
@@ -458,6 +459,10 @@ function renderTabela(){
             </td>
 
             <td>${animal.descricao||''}</td>
+
+            <td>
+                ${animal.localizacao||''}
+            </td>
 
             <td>
                 ${animal.nome_contato||''}
