@@ -169,16 +169,37 @@ h5{
 </head>
 <body>
 
-<nav class="navbar navbar-dark navbar-custom shadow">
-    <div class="container">
+<nav class="navbar navbar-dark navbar-custom">
+    <div class="container-fluid">
         <span class="navbar-brand fw-bold">
-            <i class="bi bi-heart-pulse-fill"></i>
-            Cadastro de Animais
+            🐾 Cadastro de Animais
         </span>
 
-        <button class="btn btn-light" id="toggleTheme">
-            <i class="bi bi-moon-stars"></i>
-        </button>
+        <div class="d-flex gap-2">
+
+            <a href="mapa.html" class="btn btn-light btn-sm">
+                🗺️ Mapa
+            </a>
+
+            <a href="cadastro.html" class="btn btn-success btn-sm">
+                🐾 Cadastro
+            </a>
+
+            <button
+                class="btn btn-light btn-sm"
+                id="btnRefresh">
+
+                <i class="bi bi-arrow-clockwise"></i>
+            </button>
+
+            <button
+                class="btn btn-light btn-sm"
+                id="toggleTheme">
+
+                🌙
+            </button>
+
+        </div>
     </div>
 </nav>
 
